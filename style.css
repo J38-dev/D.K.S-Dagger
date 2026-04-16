@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel Display:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Boldonse', sans-serif;
+  background-color: #F5F5F5;
+  text-align: center;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero p{
+  font-family: 'Funnel Display', sans-serif;
+  color: grey;
+  margin: 0;
+  padding-bottom: 30px;
+  padding-top: 0px;
+}
+
+.hero-logo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.top-social {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.top-social a {
+  color: #777;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.top-social a:hover {
+  color: red;
+}
+
+.shop-text {
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.shop-text:hover {
+  text-decoration: stroke;
+  color: red;
+  border-bottom: 2px solid #0BA045;
+  transition: 1.3s;
+}
+
+.top-text {
+  position: absolute;
+  top: 27px;
+  left: 30px;
+  color: black; /* adjust if needed */
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.music-section {
+  padding: 60px 20px;
+  text-align: center;
+  background:  #F5F5F5;
+  color: black;
+}
+
+.music-title {
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+.music-card {
+  max-width: 320px;
+  margin: auto;
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid red;
+  transition: 0.3s ease;
+}
+
+.music-card:hover {
+  transform: scale(1.03);
+}
+
+.album-art {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.music-info h3 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.music-info p {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.audio-player {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.merch-section {
+  padding: 80px 20px;
+  background: #F5F5F5;
+  overflow: hidden;
+}
+
+.merch-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.merch-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scrollLeft 18s linear infinite;
+}
+
+/* pause on hover (pro feel) */
+.merch-track:hover {
+  animation-play-state: paused;
+}
+
+.merch-item {
+  min-width: 220px;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.merch-item:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+.merch-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.merch-item h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.merch-item p {
+  margin-bottom: 15px;
+  color: grey;
+}
+
+/* animation */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.booking-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: #F5F5F5;
+}
+
+.booking-section h2 {
+  font-size: 26px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.booking-section p {
+  color: grey;
+  margin-bottom: 25px;
+}
+
+.booking-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border: 1px solid red;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.booking-btn:hover {
+  background: red;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* smooth fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer {
+  padding: 40px 20px;
+  text-align: center;
+  background:  #F5F5F5;
+  color: #777;
+  font-size:10px
+}
+
+.footer-social {
+  margin-bottom: 15px;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  color: grey;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: red;
+}
